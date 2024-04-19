@@ -1,9 +1,7 @@
 ### Hi there 👋
 
-All you need is to install these librarys in python
-Pyautogui,
-`pip install pyautogui`
-keyboard,
-`pip install keyboard`
-time,
-`pip install time`
+Install all the packages that are on requirements.txt using:
+
+```pip install -r requirements.txt```
+
+
