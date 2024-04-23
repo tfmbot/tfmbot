@@ -1,0 +1,47 @@
+import pyautogui
+import keyboard
+#MAP: @7770300
+def combo1():
+        pyautogui.moveTo(1485 , 310)
+        keyboard.send("3")
+        pyautogui.dragTo(1356 , 229, duration=1)
+        keyboard.send("3")
+        pyautogui.dragTo(1317 , 300,duration=1)
+def combo2():
+        pyautogui.moveTo(1317 , 300)
+        keyboard.send("1")
+        keyboard.send("SPACE")
+        pyautogui.dragTo(1358 , 281, duration=0.98)
+        keyboard.send("3")
+        keyboard.send("X")
+        pyautogui.dragTo(1293 , 228, duration=0.98)
+        keyboard.send("3")
+        pyautogui.dragTo(1293 , 228, duration=0.98)
+def combo3():
+        pyautogui.moveTo(1446 , 200)
+        keyboard.send("3")
+        keyboard.send("x")
+        keyboard.send("x")
+        keyboard.send("x")
+        keyboard.send("x")
+        keyboard.send("x")
+        pyautogui.dragTo(1306 , 405, duration=1.1)
+        keyboard.send("3")
+        pyautogui.dragTo(1306 , 405,duration=1)
+def combo4():
+        pyautogui.moveTo(1448,201)
+        keyboard.send("3")
+        keyboard.send("x")
+        keyboard.send("x")
+        keyboard.send("x")
+        keyboard.send("x")
+        pyautogui.dragTo(1296,244,duration=1.28)
+        keyboard.send("3")
+        keyboard.send("z")
+        pyautogui.dragTo(1296,244,duration=0.98)
+
+keyboard.add_hotkey("P", combo1)
+keyboard.add_hotkey("O", combo2)
+keyboard.add_hotkey("l", combo3)
+keyboard.add_hotkey("K", combo4)
+keyboard.wait("ESC")
