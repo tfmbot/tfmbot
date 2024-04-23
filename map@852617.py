@@ -1,0 +1,35 @@
+import pyautogui
+import keyboard
+#MAP: @852617
+def combo1():
+    pyautogui.moveTo(1272 , 218)
+    keyboard.send("3")
+    keyboard.send("x")
+    keyboard.send("x")
+    keyboard.send("x")
+    pyautogui.dragTo(1304 , 201,duration=1)
+    keyboard.send("3")
+    keyboard.send("x")
+    keyboard.send("x")
+    keyboard.send("x")
+    pyautogui.dragTo(1304 , 201,duration=1)
+def combo2():
+    pyautogui.moveTo(1308 , 319)
+    keyboard.send('1')
+    pyautogui.dragTo(1473 , 326,duration=1)
+    keyboard.send("3")
+    pyautogui.dragTo(1328 , 335,duration=1)
+    keyboard.send("3")
+    keyboard.send("x")
+    pyautogui.dragTo(1328 , 335,duration=1)
+def combo3():
+    pyautogui.moveTo(1305 , 322)
+    keyboard.send("1")
+    pyautogui.dragTo(1320 , 337,duration=1)
+    keyboard.send("3")
+    keyboard.send("x")
+    pyautogui.dragTo(1320 , 337,duration=1)        
+keyboard.add_hotkey("p", combo1)
+keyboard.add_hotkey("o", combo2)
+keyboard.add_hotkey("l", combo3)
+keyboard.wait("ESC")
