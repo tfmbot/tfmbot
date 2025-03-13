@@ -1,0 +1,68 @@
+
+import pyautogui
+import keyboard
+
+def combo1():
+    pyautogui.moveTo(890,274)
+    keyboard.send("1")
+    pyautogui.dragTo(908,299,duration=1)
+    keyboard.send("1")
+    keyboard.send("x")
+    keyboard.send("x")
+    keyboard.send("x")
+    pyautogui.dragTo(866,330,duration=1)
+    keyboard.send("3")
+    keyboard.send("x")
+    keyboard.send("x")
+    keyboard.send("x")
+    pyautogui.dragTo(866,330,duration=1)
+def combo2():
+    pyautogui.moveTo(1028,279)
+    keyboard.send("1")
+    pyautogui.dragTo(1015,292,duration=1)
+    keyboard.send("1")
+    keyboard.send("z")
+    keyboard.send("z")
+    keyboard.send("z")
+    pyautogui.dragTo(1042,341,duration=1)
+    keyboard.send("2")
+    keyboard.send("z")
+    keyboard.send("z")
+    pyautogui.dragTo(1042,341,duration=1)
+def combo3():
+    pyautogui.moveTo(864,235)
+    keyboard.send("3")
+    for _ in range(6):
+        keyboard.send("x")
+    pyautogui.dragTo(1090,270,duration=1)
+    keyboard.send("3")
+    keyboard.send("z")
+    keyboard.send("z")
+    keyboard.send("z")
+    keyboard.send("z")
+    pyautogui.dragTo(1018,409,duration=1)
+    keyboard.send("3")
+    keyboard.send("x")
+    keyboard.send("x")
+    pyautogui.dragTo(1018,409,duration=1)
+def combo4():
+    pyautogui.moveTo(1064,235)
+    keyboard.send("3")
+    for _ in range(6):
+        keyboard.send('x')
+    pyautogui.dragTo(847,319,duration=1)
+    keyboard.send("1")
+    keyboard.send("z")
+    keyboard.send("z")
+    pyautogui.dragTo(908,414,duration=1)
+    keyboard.send("2")
+    keyboard.send("z")
+    keyboard.send("z")
+    pyautogui.dragTo(908,414,duration=1)
+
+keyboard.add_hotkey("P",combo1) 
+keyboard.add_hotkey("O",combo2) 
+keyboard.add_hotkey("L",combo3) 
+keyboard.add_hotkey("K",combo4) 
+keyboard.wait("ESC")
+
